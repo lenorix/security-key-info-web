@@ -19,19 +19,19 @@ body > h1:first-child, body > div:first-child > h1:first-child {
 }
 
 .container-lg {
-  @apply mx-auto max-w-7xl px-4;
+  @apply mx-auto max-w-6xl px-4;
 }
 
 h1 {
-  @apply text-5xl font-bold;
+  @apply text-5xl font-bold mb-4 mt-6;
 }
 
 h2 {
-  @apply text-4xl font-bold;
+  @apply text-4xl font-bold mb-4 mt-6;
 }
 
 h3 {
-  @apply text-3xl font-bold;
+  @apply text-3xl font-bold mb-4 mt-6;
 }
 
 @keyframes rotation-shake {
