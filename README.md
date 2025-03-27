@@ -11,7 +11,9 @@ It's a hardware used for login, to authenticate you, with strong security techno
 
 ## Which is the best security key?
 
-One of the best security key is the Yubico Yubikey 5 Series. But, if you are not professional a cheaper option is the Yubico Security Key Series. The main difference between both are the Yubico OTP, smart card, OpenPGP and similar features but both support web auth and passwordless login.
+One of the best security key is the Yubico Yubikey 5 Series. But, if you are not professional a cheaper option is
+ the Yubico Security Key Series. The main difference between both are the Yubico OTP, smart card, OpenPGP and
+ similar features but both support web auth and passwordless login.
 
 ## Contact Us
 
