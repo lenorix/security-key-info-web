@@ -1,6 +1,6 @@
 ---
 permalink: index.html
-title: security key for simple security
+title: Security Key for simple security
 description: What is a security key and how it keeps your account secure
 ---
 
