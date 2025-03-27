@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js">
+    
+    <script type="module">
+      import 'https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js';
+      anchors.add();
+    </script>
+
+    <style>
+
+    </style>
+    {% if page.extra_styles %}
+      <style> {{ page.extra_styles }} </style>
+    {% endif %}
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="{{ "/assets/css/custom-style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <noscript><link rel="stylesheet" href="{{ "/assets/css/custom-style.css?v=" | append: site.github.build_revision | relative_url }}"></noscript>
+
+    {% if page.extra_preconnect %}
+      {% for preconnect in page.extra_preconnect %}
+        <link rel="preconnect" href="{{ preconnect }}">
+      {% endfor %}
+    {% endif %}
+
+    {% if page.extra_dns_prefetch %}
+      {% for dns_prefetch in page.extra_dns_prefetch %}
+        <link rel="dns-prefetch" href="{{ dns_prefetch }}">
+      {% endfor %}
+    {% endif %}
+
+    {% if page.extra_image_webp_preload %}
+      {% for img_preload in page.extra_image_webp_preload %}
+        <link rel="preload" as="image" href="{{ img_preload | append: site.github.build_revision | relative_url }}" type="image/webp">
+      {% endfor %}
+    {% endif %}
+
+    {% seo %}
+
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="shortcut icon" href="{{ "/favicon.ico?v=" | append: site.github.build_revision | relative_url }}">
+
+    {% if page.extra_head %}
+      {% include {{ page.extra_head }} %}
+    {% endif %}
+  </head>
+  <body class="bg-white text-gray-900 overflow-x-hidden">
+    {{ content }}
+  </body>
+</html>
