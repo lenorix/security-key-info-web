@@ -34,6 +34,18 @@ h3 {
   @apply text-3xl font-bold mb-4 mt-6;
 }
 
+a {
+  @apply text-blue-500 hover:text-blue-700;
+}
+
+a:hover {
+  @apply underline;
+}
+
+a:visited {
+  @apply text-purple-500 hover:text-purple-700;
+}
+
 @keyframes rotation-shake {
   0% {
     transform: rotate(0deg);

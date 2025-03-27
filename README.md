@@ -13,13 +13,13 @@ When a web require you to login, the key will ask you to touch or unlock and sig
  is unique for each login and domain name is checked. So, if you are in a phishing site, the key will not sign
  the request and the login will fail, keeping your account safe.
 
-This way, the web knows that you are the owner of the account and not a hacker.
+This way, the web knows that you are the owner of the account and not a attacker.
 
 ## How can it help to protect accounts in your company?
 
 Passwords can be shared, stolen, guessed or be in a post-it. But, the security key is a physical device. So,
- if a hacker knows the password, it will not be able to login without the key. Also, as the domain name is checked,
- phishing attacks with similar domains are mitigated.
+ if a attacker knows the password, it will not be able to login without the key. Also, as the domain name is
+ checked, phishing attacks with similar domains are mitigated.
 
 [Contact us](#contact-us) to know more about how to protect your company accounts.
 
